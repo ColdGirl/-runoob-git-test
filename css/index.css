@@ -1,0 +1,231 @@
+#header {
+  background-color: #ff841d;
+  width: 100%;
+  height: 50px;
+}
+#header .header_logo {
+  float: left;
+}
+#header .header_logo a img {
+  width: 185px;
+  height: 25px;
+}
+#header .header_app {
+  float: right;
+}
+#header .header_app a img {
+  width: 34px;
+  height: 34px;
+}
+#search {
+  height: 50px;
+  padding: 10px;
+  border-bottom: 1px solid #e6e6e6;
+  position: relative;
+}
+#search form .search_box {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  background-color: #f1f1f1;
+  border: none;
+  border-radius: 15px;
+  padding-left: 5%;
+}
+#search form .search_button {
+  position: absolute;
+  height: 30px;
+  line-height: 30px;
+  width: 63px;
+  background-color: #ff841d;
+  right: 10px;
+  top: 10px;
+  border: none;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+}
+#menu {
+  font-size: 12px;
+  text-align: center;
+}
+#menu .row {
+  margin: 16px 0;
+}
+#menu .row .item a {
+  display: block;
+  text-align: center;
+}
+#menu .row .item a img {
+  width: 50px;
+  height: 50px;
+}
+#menu .row .item a p {
+  padding-top: 3px;
+  color: #5a5a5a;
+}
+#menu .row .item:nth-last-child(-n+4) {
+  display: none;
+}
+#dissale #dissaleTitle {
+  height: 35px;
+  line-height: 35px;
+  background-color: #ff841d;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffaf47), to(#ff9000));
+  border-bottom: solid 1px #ffc881;
+}
+#dissale #dissaleTitle span {
+  color: #fff;
+  padding-left: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  float: left;
+}
+#dissale #dissaleTitle img {
+  display: block;
+  width: 20px;
+  height: 20px;
+  float: right;
+  margin-top: 8px;
+  margin-right: 10px;
+}
+#dissale #dissaleList .media {
+  padding: 14px 8px;
+  margin-top: 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+#dissale #dissaleList .media .media-left img {
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+#dissale #dissaleList .media .media-body .media-heading {
+  color: #333;
+  font-size: 15px;
+  line-height: 19px;
+  text-align: left;
+  font-weight: normal;
+}
+#dissale #dissaleList .media .media-body .media-heading span {
+  color: #ff6c00;
+}
+#dissale #dissaleList .media .media-body .media-content {
+  margin-top: 8px;
+  color: #a1a1a1;
+}
+#dissale #dissaleList .media .media-body .media-content *:nth-child(1) {
+  font-size: 12px;
+  float: left;
+}
+#dissale #dissaleList .media .media-body .media-content *:nth-child(2) {
+  float: right;
+  font-size: 12px;
+}
+#dissale #dissaleList .media .media-body .media-content *:nth-child(2) i {
+  width: 14px;
+  height: 15px;
+  vertical-align: top;
+  margin-right: 2px;
+  top: 2px;
+}
+#dissale #dissaleMore {
+  text-align: center;
+  width: 100%;
+}
+#dissale #dissaleMore a {
+  display: block;
+  background-color: #F4F4F4;
+  font-size: 13px;
+  line-height: 30px;
+  text-decoration: none;
+  magin: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  background-image: linear-gradient(#ffffff, #f4f4f4);
+  color: #5a5a5a;
+}
+/*recommend*/
+#recommend .discount {
+  height: 35px;
+  line-height: 35px;
+  background-color: #ff841d;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffaf47), to(#ff9000));
+  border-bottom: solid 1px #ffc881;
+}
+#recommend .discount span {
+  color: #fff;
+  padding-left: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  float: left;
+}
+#recommend .discount img {
+  display: block;
+  width: 20px;
+  height: 20px;
+  float: right;
+  margin-top: 8px;
+  margin-right: 10px;
+}
+/*footer*/
+#footer {
+  background: #efefef;
+}
+#footer .top {
+  border-top: 1px solid #c4c4c4;
+  border-bottom: 1px solid #c4c4c4;
+  height: 35px;
+  line-height: 35px;
+  background: #efefef;
+}
+#footer .top .w30 {
+  width: 30%;
+  float: left;
+  color: #5a5a5a;
+  border-right: 1px solid #c4c4c4;
+}
+#footer .top .w40 {
+  width: 40%;
+  float: right;
+  font-size: 14px;
+  text-align: center;
+  color: #5a5a5a;
+}
+#footer .top .w40 a {
+  color: #5a5a5a;
+  position: relative;
+}
+#footer .top .w40 a img {
+  display: block;
+  height: 15px;
+  position: absolute;
+  top: -2px;
+  right: 50px;
+}
+#footer .bottom {
+  background: #efefef;
+  text-align: center;
+  font-size: 12px;
+  padding-bottom: 2px;
+  color: #666;
+  color: #5a5a5a;
+}
+#footer .bottom p {
+  height: 15px;
+}
+#footer .bottom p a {
+  color: #5a5a5a;
+}
+#icon {
+  position: fixed;
+  z-index: 999;
+  bottom: 10px;
+  right: 8px;
+  width: 44px;
+  text-align: center;
+  line-height: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(180, 180, 180, 0.85);
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>category</title>
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/hsf.css" />
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/category.css">
+</head>
+<body>
+<!--header-->
+<header id="header">
+    <div class="header_logo"><a href="#"><img src="images/header_logo.png" alt=""></a></div>
+    <div class="header_app"><a href="#"><img src="images/header_app.png" alt=""></a></div>
+</header>
+<!--search-->
+<section id="search">
+    <form action="url">
+        <input class="search_box" type="text" placeholder="请输入您想比价的产品" />
+        <input class="search_button" type="text" value="搜索" />
+    </form>
+</section>
+
+<!--category中间渲染的-->
+<section class="category">
+    <ul class="categoryUU">
+        <li class="categoryTitle categoryTitle0"  titleId="0"><span>大家电</span><i></i></li>
+        <div class="row categoryList categoryContent0">
+            <div class="categoryContent col-xs-4"><a href="#">电视</a></div>
+            <div class="categoryContent col-xs-4">电视</div>
+            <div class="categoryContent col-xs-4">电视</div>
+            <div class="categoryContent col-xs-4">电视</div>
+            <div class="categoryContent col-xs-4">电视</div>
+        </div>
+        <li class="categoryTitle categoryTitle1"><span>大家电</span><i></i></li>
+        <div class="row categoryList categoryContent1">
+            <div class="categoryContent col-xs-4">电视</div>
+            <div class="categoryContent col-xs-4">电视</div>
+            <div class="categoryContent col-xs-4">电视</div>
+            <div class="categoryContent col-xs-4">电视</div>
+            <div class="categoryContent col-xs-4">电视</div>
+        </div>
+    </ul>
+</section>
+<!--footer-->
+<footer id="footer">
+    <div class="top">
+        <div class="w30">登录</div>
+        <div class="w30">注册</div>
+        <div class="w40"><a href="#"><img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">返回顶部</a></div>
+    </div>
+    <div class="bottom">
+        <p><a href="#" style="color: red">手机APP下载</a>
+            <a href="#">慢慢买手机版 -- 掌上比价平台</a></p>
+        <p>m.manmanbuy.com  </p>
+    </div>
+</footer>
+
+<!--categroyTemplate-->
+<script type="text/template" id="categroyTemplate">
+    {{each result as value index}}
+    <li class="categoryTitle categoryTitle{{value.titleId}}"
+        titleId='{{value.titleId}}'><span>{{value.title}}</span><i></i></li>
+    <div class="row categoryList categoryContent{{value.titleId}}"></div>
+    {{/each}}
+</script>
+
+<!--categroyContentteplate-->
+<script type="text/template" id="categroyContentTemplate">
+    {{each result as value index}}
+    <div class="categoryContent col-xs-4" categoryId='{{value.categoryId}}'>
+        <a href="productlist.html?category={{value.category}}&categoryid={{value.categoryId}}">{{value.category}}</a></div>
+    {{/each}}
+
+</script>
+<script src="./js/url.js"></script>
+<script src="./lib/jquery/jquery.min.js"></script>
+<script src="./js/template.js"></script>
+<script src="./js/category.js"></script>
+
+</body>
+</html>
